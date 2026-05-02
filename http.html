@@ -2,41 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Term Name - Internet Terminology</title>
-    <style>
-        nav { background: #f4f4f4; padding: 10px; position: sticky; top: 0; }
-        ul { list-style-type: none; padding: 0; }
-        li { display: inline; margin-right: 15px; }
-        .content { margin: 20px; }
-        img { max-width: 500px; display: block; margin-top: 10px; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP - Internet Terminology</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>&#65372;
-            <li><a href="www.html">WWW</a></li>&#65372;
-            <li><a href="tcp_ip.html">TCP/IP</a></li>&#65372;
-            <li><a href="browsers.html">Browsers</a></li>&#65372;
-            <li><a href="servers.html">Servers</a></li>&#65372;
-            <li><a href="urls.html">URLs</a></li>&#65372;
-            <li><a href="dns.html">DNS</a></li>&#65372;
-            <li><a href="http.html">HTTP</a></li>&#65372;
-            <li><a href="intranet.html">Intranet</a></li>&#65372;
-            <li><a href="extranet.html">Extranet</a></li>&#65372;
-            <li><a href="multitier.html">Multitier</a></li>&#65372;
-            <li><a href="ftp.html">FTP</a></li>&#65372;
-            <li><a href="html.html">HTML</a></li>&#65372;
-            <li><a href="web1.html">Web 1.0</a></li>&#65372;
-            <li><a href="web2.html">Web 2.0</a></li>&#65372;
-            <li><a href="web3.html">Web 3.0</a></li>&#65372;
-            <li><a href="web4.html">Web 4.0</a></li>&#65372;
-        </ul>
-    </nav>
+     <nav>
+    <a href="index.html">Home</a>
+    <a href="www.html">WWW</a>
+    <a href="tcp_ip.html">TCP/IP</a>
+    <a href="browsers.html">Browsers</a>
+    <a href="servers.html">Servers</a>
+    <a href="urls.html">URLs</a>
+    <a href="dns.html">DNS</a>
+    <a href="http.html">HTTP</a>
+    <a href="intranet.html">Intranet</a>
+    <a href="extranet.html">Extranet</a>
+    <a href="multitier.html">Multitier</a>
+    <a href="ftp.html">FTP</a>
+    <a href="html.html">HTML</a>
+    <a href="web1.html">Web 1.0</a>
+    <a href="web2.html">Web 2.0</a>
+    <a href="web3.html">Web 3.0</a>
+    <a href="web4.html">Web 4.0</a>
+</nav>
+
     <div class="content">
-        <h1>Term Name Here</h1>
-        <p>Detailed elaboration goes here...</p>
-        <img src="images/term-name.jpg" alt="Description">
+        <h1>Hypertext Transfer Protocol (HTTP)</h1>
+        
+        <section>
+            <h2>What is HTTP?</h2>
+            <p>
+                <strong>HTTP</strong> is the fundamental protocol used by the World Wide Web to define how messages are formatted and transmitted. It is a "stateless" protocol, meaning each command is executed independently, without any knowledge of the commands that came before it.
+            </p>
+        </section>
+
+        <section>
+            <h2>The Request-Response Cycle</h2>
+            <p>
+                HTTP functions as a request-response protocol in the client-server computing model. 
+            </p>
+            <ul>
+                <li><strong>The Request:</strong> When you enter a website, your browser (the client) sends an HTTP request to the web server.</li>
+                <li><strong>The Response:</strong> The server receives the request, processes it, and sends back an HTTP response containing the requested resources (HTML, images, etc.) or an error message.</li>
+            </ul>
+        </section>
+
+        <img src="images/http.jpg" alt="Diagram of the HTTP Request and Response cycle" class="term-img">
+
+        <section>
+            <h2>HTTP vs. HTTPS</h2>
+            <p>
+                Standard HTTP transmits data in plain text, which can be intercepted. <strong>HTTPS (Hypertext Transfer Protocol Secure)</strong> uses encryption (SSL/TLS) to secure the data as it travels between the client and server. Today, HTTPS is the industry standard for protecting user privacy and sensitive information like passwords and credit card details.
+            </p>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Ethan Ng'ang'a | Internet Terminology Assignment</p>
+    </footer>
 </body>
 </html>

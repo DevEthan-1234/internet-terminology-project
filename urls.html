@@ -2,41 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Term Name - Internet Terminology</title>
-    <style>
-        nav { background: #f4f4f4; padding: 10px; position: sticky; top: 0; }
-        ul { list-style-type: none; padding: 0; }
-        li { display: inline; margin-right: 15px; }
-        .content { margin: 20px; }
-        img { max-width: 500px; display: block; margin-top: 10px; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URLs - Internet Terminology</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>&#65372;
-            <li><a href="www.html">WWW</a></li>&#65372;
-            <li><a href="tcp_ip.html">TCP/IP</a></li>&#65372;
-            <li><a href="browsers.html">Browsers</a></li>&#65372;
-            <li><a href="servers.html">Servers</a></li>&#65372;
-            <li><a href="urls.html">URLs</a></li>&#65372;
-            <li><a href="dns.html">DNS</a></li>&#65372;
-            <li><a href="http.html">HTTP</a></li>&#65372;
-            <li><a href="intranet.html">Intranet</a></li>&#65372;
-            <li><a href="extranet.html">Extranet</a></li>&#65372;
-            <li><a href="multitier.html">Multitier</a></li>&#65372;
-            <li><a href="ftp.html">FTP</a></li>&#65372;
-            <li><a href="html.html">HTML</a></li>&#65372;
-            <li><a href="web1.html">Web 1.0</a></li>&#65372;
-            <li><a href="web2.html">Web 2.0</a></li>&#65372;
-            <li><a href="web3.html">Web 3.0</a></li>&#65372;
-            <li><a href="web4.html">Web 4.0</a></li>&#65372;
-        </ul>
-    </nav>
+     <nav>
+    <a href="index.html">Home</a>
+    <a href="www.html">WWW</a>
+    <a href="tcp_ip.html">TCP/IP</a>
+    <a href="browsers.html">Browsers</a>
+    <a href="servers.html">Servers</a>
+    <a href="urls.html">URLs</a>
+    <a href="dns.html">DNS</a>
+    <a href="http.html">HTTP</a>
+    <a href="intranet.html">Intranet</a>
+    <a href="extranet.html">Extranet</a>
+    <a href="multitier.html">Multitier</a>
+    <a href="ftp.html">FTP</a>
+    <a href="html.html">HTML</a>
+    <a href="web1.html">Web 1.0</a>
+    <a href="web2.html">Web 2.0</a>
+    <a href="web3.html">Web 3.0</a>
+    <a href="web4.html">Web 4.0</a>
+</nav>
+
     <div class="content">
-        <h1>Term Name Here</h1>
-        <p>Detailed elaboration goes here...</p>
-        <img src="images/term-name.jpg" alt="Description">
+        <h1>Uniform Resource Locators (URL)</h1>
+        
+        <section>
+            <h2>What is a URL?</h2>
+            <p>
+                A <strong>Uniform Resource Locator (URL)</strong> is the unique address used to locate a specific resource on the web. It can point to a website, an image, a video, or a document. Think of it as the "digital coordinates" for a specific piece of data on the internet.
+            </p>
+        </section>
+
+        <section>
+            <h2>Anatomy of a URL</h2>
+            <p>
+                A typical URL is made up of several distinct components that tell the browser how to find and retrieve the resource:
+            </p>
+            <ul>
+                <li><strong>Protocol:</strong> (e.g., <code>https://</code>) Tells the browser which language to use to communicate.</li>
+                <li><strong>Domain Name:</strong> (e.g., <code>www.example.com</code>) The human-readable name of the server hosting the resource.</li>
+                <li><strong>Path:</strong> (e.g., <code>/images/logo.png</code>) The specific location of the file on that server.</li>
+                <li><strong>Parameters:</strong> (e.g., <code>?id=123</code>) Extra information passed to the server to find specific data.</li>
+            </ul>
+        </section>
+
+        <img src="images/url.jpg" alt="Diagram showing the parts of a URL" class="term-img">
+
+        <section>
+            <h2>URL vs. URI</h2>
+            <p>
+                While the terms are often used interchangeably, a <strong>URI (Uniform Resource Identifier)</strong> is the broad category, and a URL is a specific type of URI that includes the mechanism (protocol) to find the resource. All URLs are URIs, but not all URIs are URLs!
+            </p>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Ethan Ng'ang'a | Internet Terminology Assignment</p>
+    </footer>
 </body>
 </html>

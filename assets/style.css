@@ -1,0 +1,57 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+}
+
+/* The Navbar Container */
+nav {
+    background: #2c3e50;
+    padding: 10px;           /* Added padding for breathing room */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    text-align: center;      /* This centers all your links */
+}
+
+/* Link Styling - This now handles the layout instead of the <ul> */
+nav a {
+    display: inline-block;   /* Keeps them side-by-side but allows padding */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin: 5px 15px;        /* Spacing between the links */
+    padding: 5px;            /* Makes the clickable area slightly larger */
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Content Container */
+.content {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Image Styling */
+.term-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 5px solid #fff;
+}

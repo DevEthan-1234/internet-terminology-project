@@ -2,41 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Term Name - Internet Terminology</title>
-    <style>
-        nav { background: #f4f4f4; padding: 10px; position: sticky; top: 0; }
-        ul { list-style-type: none; padding: 0; }
-        li { display: inline; margin-right: 15px; }
-        .content { margin: 20px; }
-        img { max-width: 500px; display: block; margin-top: 10px; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTP - Internet Terminology</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>&#65372;
-            <li><a href="www.html">WWW</a></li>&#65372;
-            <li><a href="tcp_ip.html">TCP/IP</a></li>&#65372;
-            <li><a href="browsers.html">Browsers</a></li>&#65372;
-            <li><a href="servers.html">Servers</a></li>&#65372;
-            <li><a href="urls.html">URLs</a></li>&#65372;
-            <li><a href="dns.html">DNS</a></li>&#65372;
-            <li><a href="http.html">HTTP</a></li>&#65372;
-            <li><a href="intranet.html">Intranet</a></li>&#65372;
-            <li><a href="extranet.html">Extranet</a></li>&#65372;
-            <li><a href="multitier.html">Multitier</a></li>&#65372;
-            <li><a href="ftp.html">FTP</a></li>&#65372;
-            <li><a href="html.html">HTML</a></li>&#65372;
-            <li><a href="web1.html">Web 1.0</a></li>&#65372;
-            <li><a href="web2.html">Web 2.0</a></li>&#65372;
-            <li><a href="web3.html">Web 3.0</a></li>&#65372;
-            <li><a href="web4.html">Web 4.0</a></li>&#65372;
-        </ul>
-    </nav>
+     <nav>
+    <a href="index.html">Home</a>
+    <a href="www.html">WWW</a>
+    <a href="tcp_ip.html">TCP/IP</a>
+    <a href="browsers.html">Browsers</a>
+    <a href="servers.html">Servers</a>
+    <a href="urls.html">URLs</a>
+    <a href="dns.html">DNS</a>
+    <a href="http.html">HTTP</a>
+    <a href="intranet.html">Intranet</a>
+    <a href="extranet.html">Extranet</a>
+    <a href="multitier.html">Multitier</a>
+    <a href="ftp.html">FTP</a>
+    <a href="html.html">HTML</a>
+    <a href="web1.html">Web 1.0</a>
+    <a href="web2.html">Web 2.0</a>
+    <a href="web3.html">Web 3.0</a>
+    <a href="web4.html">Web 4.0</a>
+</nav>
+
     <div class="content">
-        <h1>Term Name Here</h1>
-        <p>Detailed elaboration goes here...</p>
-        <img src="images/term-name.jpg" alt="Description">
+        <h1>File Transfer Protocol (FTP)</h1>
+        
+        <section>
+            <h2>What is FTP?</h2>
+            <p>
+                <strong>File Transfer Protocol (FTP)</strong> is a standard network protocol used to transfer computer files from one host to another over a TCP-based network, such as the Internet. It is built on a client-server model architecture and uses separate control and data connections between the client and the server.
+            </p>
+        </section>
+
+        <section>
+            <h2>How FTP Functions</h2>
+            <p>
+                FTP typically requires a user to log in to the server to establish a connection. There are two primary modes of operation:
+            </p>
+            <ul>
+                <li><strong>Active Mode:</strong> The client opens a port and waits for the server to connect to it to start the data transfer.</li>
+                <li><strong>Passive Mode:</strong> The server opens a port and waits for the client to connect to it. This is more common today as it works better with modern firewalls.</li>
+            </ul>
+        </section>
+
+        <img src="images/ftp.jpg" alt="Diagram of Client-Server FTP interaction" class="term-img">
+
+        <section>
+            <h2>FTP vs. SFTP</h2>
+            <p>
+                While original FTP sends data in plain text (including usernames and passwords), it is considered insecure for modern web use. <strong>SFTP (SSH File Transfer Protocol)</strong> is the secure version that encrypts both commands and data to prevent sensitive information from being intercepted during the transfer.
+            </p>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Ethan Ng'ang'a | Internet Terminology Assignment</p>
+    </footer>
 </body>
 </html>
